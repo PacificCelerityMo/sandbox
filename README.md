@@ -13,3 +13,5 @@ This is a public repository - everyone can see it.
 
 8/6/2013: hotfix1 is branched for a hot fix.
 
+8/6/2013: local and remote develop and master repos are all merged successfully before this point.
+
