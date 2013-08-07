@@ -1,0 +1,35 @@
+
+// MathFunctionsDLL.cpp: implementation of the exported math functions as defined in MathFunctionsDLL.h
+//
+
+#include "stdafx.h"
+#include "MathFunctions.h"
+#include <stdexcept>
+
+using namespace std;
+
+namespace Celerity
+{
+	double MathFunctions::add(double a, double b)
+	{
+		return a + b;
+	}
+
+	double MathFunctions::substract(double a, double b)
+	{
+		return a - b;
+	}
+
+	double MathFunctions::multiply(double a, double b)
+	{
+		return a * b;
+	}
+
+	double MathFunctions::divide(double a, double b)
+	{
+		if(b == 0)
+			throw invalid_argument("the divisor can't be zero");
+
+		return a / b;
+	}
+}
