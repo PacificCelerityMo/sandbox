@@ -10,6 +10,12 @@ using namespace std;
 
 namespace Celerity
 {
+	static double pi = 3.1415926;
+
+	MathFunctions::MathFunctions() 
+	{
+	}
+
 	double MathFunctions::add(double a, double b)
 	{
 		return a + b;
@@ -31,5 +37,15 @@ namespace Celerity
 			throw invalid_argument("the divisor can't be zero");
 
 		return a / b;
+	}
+
+	double MathFunctions::circumference(double r)
+	{
+		return pi * r * 2;
+	}
+
+	double MathFunctions::area(double r)
+	{
+		return pi * r * r;
 	}
 }
