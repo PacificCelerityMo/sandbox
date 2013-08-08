@@ -54,7 +54,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\HelloDLL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\HelloDLL;..\HelloLib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -93,6 +93,9 @@
   <ItemGroup>
     <ProjectReference Include="..\HelloDLL\HelloDLL.vcxproj">
       <Project>{0859ffe9-2378-46f5-b6af-f5ed7e579b50}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\HelloLib\HelloLib.vcxproj">
+      <Project>{510ec357-8493-43ab-a0e2-2c5856d7b1df}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -3,12 +3,12 @@
 //
 
 #include "stdafx.h"
-#include "MathFunctions.h"
+#include "MathDllFunctions.h"
 #include <stdexcept>
 
 using namespace std;
 
-namespace Celerity
+namespace CelerityDLL
 {
 	static double pi = 3.1415926;
 

@@ -6,7 +6,7 @@
 #define MATHFUNCSDLL_API	__declspec(dllimport)
 #endif
 
-namespace Celerity
+namespace CelerityDLL
 {
 	// This class is exported from the HelloDLL.dll.
 	class MathFunctions
